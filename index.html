@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Quadras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de Quadras</h1>
+        <form id="agendamentoForm">
+            <label for="quadra">Quadra:</label>
+            <select id="quadra" required>
+                <option value="Quadra 1">Quadra 1</option>
+                <option value="Quadra 2">Quadra 2</option>
+                <option value="Quadra 3">Quadra 3</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+
+            <label for="hora">Horários Disponíveis:</label>
+            <select id="hora" required>
+                <option value="">Selecione a data e a quadra</option>
+            </select>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome" required>
+
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" placeholder="Sua matrícula" required>
+
+            <button type="submit">Agendar</button>
+        </form>
+        <div id="agendamentos">
+            <h2>Agendamentos:</h2>
+            <ul id="listaAgendamentos"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
